@@ -1,3 +1,5 @@
+package uitests;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -9,7 +11,7 @@ import org.testng.annotations.*;
 import java.sql.SQLOutput;
 
 
-public class GoogleSearchTests {
+public class GoogleSearchTestsRayBan {
 
     WebDriver driver;
 

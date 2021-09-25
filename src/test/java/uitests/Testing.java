@@ -1,10 +1,8 @@
-import io.github.bonigarcia.wdm.WebDriverManager;
+package uitests;
 
-
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import uitests.Calculator;
 
 public class Testing {
 
