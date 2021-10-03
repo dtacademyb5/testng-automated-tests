@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<suite name="Regression Test Suite">
+<!--    Test suite - for example regression suite -->
+    <!--    Test suite - for example Smoke Test Suite -->
+
+
+    <test name="UI Tests">
+
+       <classes>
+
+           <class name="uitests.googleSearchTests.GoogleSearchTestsChicken">
+
+               <methods>
+<!--                   <include name=".*Chicken"></include>-->
+                    <!--                   ends with-->
+<!--                   <include name="test.*"></include>-->
+                   <!--                   starts with-->
+
+<!--                   <include name=".*Negative.*"></include>-->
+                   <!--                   contains with-->
+                   <include name="TC.*SPR2.*988"></include>
+                   <!--  starts with TC, contains SPR2, ends with 988   -->
+
+
+
+               </methods>
+           </class>
+
+       </classes>
+
+
+    </test>
+
+
+
+<!--    <test name="API Tests">-->
+
+
+<!--    </test>-->
+
+
+
+</suite>

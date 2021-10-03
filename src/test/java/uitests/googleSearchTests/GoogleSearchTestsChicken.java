@@ -13,29 +13,29 @@ public class GoogleSearchTestsChicken {
 
     WebDriver driver;
 
-    @BeforeClass
+    @BeforeClass (alwaysRun = true)  // alwaysRun must be set to true for all Before and After Annotations when running group tests
     public void setupClass(){
         System.out.println("Setting up driver");
         WebDriverManager.chromedriver().setup();
     }
 
-    @AfterClass
+    @AfterClass (alwaysRun = true)
     public void tearDown(){
         System.out.println("Generate report");
     }
 
-    @BeforeMethod
+    @BeforeMethod (alwaysRun = true)
     public void setupDriver(){
         driver = new ChromeDriver();
     }
 
-    @AfterMethod
+    @AfterMethod (alwaysRun = true)
     public void tearDownDriver(){
         driver.quit();
     }
 
 
-    @Test
+    @Test (groups = {"smoke"})
     public void testGoogleSearchChicken(){
          String expected = "chicken";
         // Navigate to google
@@ -63,8 +63,8 @@ public class GoogleSearchTestsChicken {
     }
 
 
-    @Test
-    public void testGoogleSearchRooster(){
+    @Test (groups = {"smoke", "login"})
+    public void TC0001_SPR2_UI_988(){
         String expected = "rooster";
         // Navigate to google
         driver.get("https://www.google.com/");
@@ -77,7 +77,7 @@ public class GoogleSearchTestsChicken {
 
     }
 
-    @Test
+    @Test (groups = "login")
     public void testGoogleSearchNegativeRooster(){
         String expected = "rooster";
         // Navigate to google

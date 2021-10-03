@@ -15,23 +15,23 @@ public class GoogleSearchTestsRayBan {
 
     WebDriver driver;
 
-    @BeforeClass
+    @BeforeClass (alwaysRun = true)
     public void setupClass(){
         System.out.println("Setting up driver");
         WebDriverManager.chromedriver().setup();
     }
 
-    @AfterClass
+    @AfterClass (alwaysRun = true)
     public void tearDown(){
         System.out.println("Generate report");
     }
 
-    @BeforeMethod
+    @BeforeMethod (alwaysRun = true)
     public void setupDriver(){
         driver = new ChromeDriver();
     }
 
-    @AfterMethod
+    @AfterMethod (alwaysRun = true)
     public void tearDownDriver(){
         driver.quit();
     }
@@ -51,7 +51,7 @@ public class GoogleSearchTestsRayBan {
 
     }
 
-    @Test
+    @Test (groups = {"smoke"})
     public void testGoogleSearchNegative(){
         String expected = "ray-ban";
         // Navigate to google

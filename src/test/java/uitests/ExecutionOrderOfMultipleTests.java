@@ -19,7 +19,7 @@ public class ExecutionOrderOfMultipleTests {
     }
 
 
-    @Test
+    @Test (groups = {"smoke"})
     public void a(){
         System.out.println("a");
     }

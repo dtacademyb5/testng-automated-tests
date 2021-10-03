@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<suite name="Regression Test Suite">
+<!--    Test suite - for example regression suite -->
+    <!--    Test suite - for example Smoke Test Suite -->
+
+
+    <test name="UI Tests">
+
+       <classes>
+
+           <class name="uitests.googleSearchTests.GoogleSearchTestsChicken"></class>
+           <!--           class names must include packages if there are any-->
+           <class name="uitests.googleSearchTests2.GoogleSearchTestsRayBan"></class>
+
+           <class name="uitests.ExecutionOrderOfMultipleTests"></class>
+       </classes>
+
+
+    </test>
+
+
+
+<!--    <test name="API Tests">-->
+
+
+<!--    </test>-->
+
+
+
+</suite>
