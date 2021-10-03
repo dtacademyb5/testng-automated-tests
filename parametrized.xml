@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<suite name="Regression Test Suite">
+
+
+
+    <test name="UI Tests">
+
+        <parameter name="link" value="https://www.google.com/"></parameter>
+        <parameter name="term" value="rooster"></parameter>
+        <parameter name="year" value="1999"></parameter>
+
+        <classes>
+
+           <class name="uitests.ParametrizedTestXmlFile"></class>
+           <!--           class names must include packages if there are any-->
+       </classes>
+
+
+    </test>
+
+
+
+<!--    <test name="API Tests">-->
+
+
+<!--    </test>-->
+
+
+
+</suite>

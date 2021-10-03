@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<suite name="Crossbrowser tests">
+
+
+
+    <test name="Edge Test">
+        <parameter name="browser" value="edge"></parameter>
+        <classes>
+           <class name="uitests.ParametrizedCrossBrowserTest"></class>
+       </classes>
+    </test>
+
+    <test name="Chrome Test">
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="uitests.ParametrizedCrossBrowserTest"></class>
+        </classes>
+    </test>
+
+    <test name="Firefox Test">
+        <parameter name="browser" value="firefox"></parameter>
+        <classes>
+            <class name="uitests.ParametrizedCrossBrowserTest"></class>
+        </classes>
+    </test>
+
+    <test name="Opera Test">
+        <parameter name="browser" value="opera"></parameter>
+        <classes>
+            <class name="uitests.ParametrizedCrossBrowserTest"></class>
+        </classes>
+    </test>
+
+
+
+<!--    <test name="API Tests">-->
+
+
+<!--    </test>-->
+
+
+
+</suite>
