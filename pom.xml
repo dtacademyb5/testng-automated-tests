@@ -69,7 +69,7 @@
 
                             <!--suppress UnresolvedMavenProperty -->
 
-                            <suiteXmlFile>${runner}</suiteXmlFile>
+                                <suiteXmlFile>${runner}</suiteXmlFile>
 <!--               when you use this placeholder you will need to pass the xml file name from cmd in this format:
                       mvn test -Drunner=run_packages.xml  -  this will run run_packages.xml file
 -->
